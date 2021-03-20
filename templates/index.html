@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>YouTube Video Downloader</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+
+    <style>
+        img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        </style>
+    </head>
+<body>
+    <div class="ui container" style=" margin-top: 50px;" >
+    <div >
+    <img src="https://1.bp.blogspot.com/-qdRfUNOtjkM/XeI_00z9pzI/AAAAAAAAF4E/FeD2SvVFnKUjPAKQ_cNM6-D2ahjKb0HkQCLcBGAsYHQ/s1600/Youtube-Icon-square-2340x2340-2.png" alt="YouTube Video Downloader" width="20%",height="10%">
+    <h1 class="ui center aligned header">YouTube Video Downloader </h1>
+    </div>
+    <div class ="ui segment">
+    <form class="ui form" action="{{ url_for('index') }}" method="POST">
+
+        <input type="text" placeholder="YouTube Video Link ..." name="url"><br><br>
+        <input class="fluid ui blue button"  type="submit" value="Process"  >
+    </form>
+</div>
+</div>
+
+</body>
+</html>
